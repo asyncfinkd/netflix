@@ -25,6 +25,19 @@ export const Header = styled.div`
   padding: 0.8rem 1.2em;
   user-select: none;
   align-items: center;
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+
+    @media (max-width: 600px) {
+      width: 16px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 export const Body = styled.div``;
