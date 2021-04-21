@@ -20,7 +20,7 @@ export const Column = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   grid-gap: 15px;
 
   @media (max-width: 1000px) {
@@ -33,12 +33,21 @@ export const Link = styled.a`
   margin-bottom: 20px;
   font-size: 14px;
   text-decoration: none;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
 `;
 
 export const Title = styled.p`
   font-size: 16px;
   color: #757575;
   margin-bottom: 40px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
 `;
 
 export const Text = styled.p`

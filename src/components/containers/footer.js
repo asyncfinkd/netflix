@@ -37,6 +37,8 @@ export default function FooterContainer() {
             <Footer.Link href="#">Buy Account</Footer.Link>
           </Footer.Column>
         </Footer.Row>
+        <Footer.Break />
+        <Footer.Text>Netflix Georgia</Footer.Text>
       </Footer>
     </>
   );
