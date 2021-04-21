@@ -9,6 +9,7 @@
 Netflix's initial business model included DVD sales and rental by mail, but Hastings abandoned the sales about a year after the company's founding to focus on the initial DVD rental business.[9][14] Netflix expanded its business in 2007 with the introduction of streaming media while retaining the DVD and Blu-ray rental business. The company expanded internationally in 2010 with streaming available in Canada,[15] followed by Latin America and the Caribbean. Netflix entered the content-production industry in 2013, debuting its first series House of Cards.
 
 Since 2012, Netflix has taken more of an active role as producer and distributor for both film and television series, and to that end, offers a variety of "Netflix Original" content through its online library.[16] By January 2016, Netflix services operated in more than 190 countries.[17] Netflix released an estimated 126 original series and films in 2016, more than any other network or cable channel.[18] Their efforts to produce new content, secure the rights for additional content, and diversify through 190 countries have resulted in the company racking up billions in debt: $21.9 billion as of September 2017, up from $16.8 billion from the previous year.[19] $6.5 billion of this is long-term debt, with the remainder in long-term obligations.[20] In October 2018, Netflix announced it would raise another $2 billion in debt to help fund new content.[21] On July 10, 2020, Netflix became the largest entertainment/media company by market capitalization.[22]</small>
+
 </p>
 
 <h3 align="center">
@@ -21,6 +22,6 @@ Since 2012, Netflix has taken more of an active role as producer and distributor
 
 ## Contributions
 
-Netflix is an open source where you can contribute at any time. For this we need to get acquainted first with our policies. 
+Netflix is an open source where you can contribute at any time. For this we need to get acquainted first with our policies.
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on this project.
