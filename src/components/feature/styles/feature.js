@@ -13,6 +13,7 @@ export const Title = styled.h1`
   max-width: 640px;
   font-size: 50px;
   font-weight: 600;
+  font-family: Netflix Font;
   margin: auto;
 
   @media (max-width: 600px) {
