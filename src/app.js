@@ -16,21 +16,21 @@ export default function App() {
           <HeaderContainer>
             <Feature>
               <Feature.Title>
-                Unlimited films, TV programmes and more.
+                Unlimited movies, TV shows, and more.
               </Feature.Title>
               <Feature.Subtitle>
-                Watch anywhere. Cancel at any time.
+                Watch anywhere. Cancel at anytime.
               </Feature.Subtitle>
-            </Feature>
-            <OptForm>
-              <OptForm.Input placeholder="Email address" />
-              <OptForm.Button>Try it now</OptForm.Button>
-              <OptForm.Break />
               <OptForm.Text>
                 Ready to watch? Enter your email to create or restart your
                 membership
               </OptForm.Text>
-            </OptForm>
+              <OptForm>
+                <OptForm.Input placeholder="Email address" />
+                <OptForm.Button>Try it now</OptForm.Button>
+                <OptForm.Break />
+              </OptForm>
+            </Feature>
           </HeaderContainer>
           <JumbotronContainer />
           <FaqsContainer />
