@@ -58,6 +58,7 @@ export const ButtonLink = styled(ReactRouterLink)`
   cursor: pointer;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: Netflix Font;
 
   &:hover {
     background-color: #f40612;

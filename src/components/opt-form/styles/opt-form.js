@@ -34,7 +34,6 @@ export const Button = styled.button`
   background: #e50914;
   color: white;
   outline: none;
-  text-transform: uppercase;
   padding: 0 32px;
   font-size: 26px;
   border: 0;
@@ -62,6 +61,8 @@ export const Text = styled.p`
   font-size: 19.2px;
   color: white;
   text-align: center;
+  font-family: Netflix Font;
+
   @media (max-width: 600px) {
     font-size: 16px;
     line-height: 22px;

@@ -27,7 +27,7 @@ export default function App() {
               </OptForm.Text>
               <OptForm>
                 <OptForm.Input placeholder="Email address" />
-                <OptForm.Button>Try it now</OptForm.Button>
+                <OptForm.Button>Get Started</OptForm.Button>
                 <OptForm.Break />
               </OptForm>
             </Feature>

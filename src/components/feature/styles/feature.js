@@ -26,6 +26,7 @@ export const Subtitle = styled.h2`
   font-size: 26px;
   font-weight: normal;
   margin: 16px auto;
+  font-family: Netflix Font;
 
   @media (max-width: 600px) {
     font-size: 18px;
