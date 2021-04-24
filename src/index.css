@@ -5,4 +5,5 @@
 
 body {
   font-family: Netflix Font !important;
+  overflow-x: hidden;
 }

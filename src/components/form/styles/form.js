@@ -12,6 +12,20 @@ export const Container = styled.div`
   max-width: 300px;
   padding: 60px 68px 40px;
   margin-bottom: 100px;
+
+  @media (max-width: 500px) {
+    padding: 35px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 360px) {
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
 `;
 
 export const Error = styled.div`
@@ -48,6 +62,10 @@ export const TextSmall = styled.p`
   font-size: 13px;
   line-height: normal;
   color: #8c8c8c;
+
+  @media (max-width: 360px) {
+    width: 240px;
+  }
 `;
 
 export const Link = styled(ReactRouterLink)`
@@ -72,6 +90,11 @@ export const Input = styled.input`
   &:last-of-type {
     margin-bottom: 30px;
   }
+
+  @media (max-width: 360px) {
+    width: 200px;
+    margin: 10px auto;
+  }
 `;
 
 export const Submit = styled.button`
@@ -86,5 +109,10 @@ export const Submit = styled.button`
   cursor: pointer;
   &:disabled {
     opacity: 0.5;
+  }
+
+  @media (max-width: 360px) {
+    width: 240px;
+    margin: auto;
   }
 `;
