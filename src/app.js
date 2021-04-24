@@ -7,6 +7,7 @@ import * as ROUTES from "./constants/routes";
 import HeaderContainer from "./components/containers/header";
 import OptForm from "./components/opt-form/index";
 import Feature from "./components/feature/index";
+import Form from "./components/form/index";
 
 export default function App() {
   return (
@@ -37,7 +38,45 @@ export default function App() {
           <FooterContainer />
         </Route>
         <Route exact path={ROUTES.SIGN_IN}>
-          <HeaderContainer></HeaderContainer>
+          <HeaderContainer>
+            <Form>
+              <Form.Title>Sign In</Form.Title>
+              {/* {error && <Form.Error data-testid="error">{error}</Form.Error>} */}
+
+              <Form.Base
+                // onSubmit={handleSignin}
+                method="POST"
+              >
+                <Form.Input
+                  placeholder="Email address"
+                  // value={emailAddress}
+                  // onChange={({ target }) => setEmailAddress(target.value)}
+                />
+                <Form.Input
+                  type="password"
+                  // value={password}
+                  autoComplete="off"
+                  placeholder="Password"
+                  // onChange={({ target }) => setPassword(target.value)}
+                />
+                <Form.Submit
+                  // disabled={isInvalid}
+                  type="submit"
+                  data-testid="sign-in"
+                >
+                  Sign In
+                </Form.Submit>
+              </Form.Base>
+
+              <Form.Text>
+                New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+              </Form.Text>
+              <Form.TextSmall>
+                This page is protected by Google reCAPTCHA to ensure you're not
+                a bot. Learn more.
+              </Form.TextSmall>
+            </Form>
+          </HeaderContainer>
           <FooterContainer />
         </Route>
       </Router>
