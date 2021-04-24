@@ -6,6 +6,7 @@ import FaqsContainer from "./components/containers/faqs";
 import * as ROUTES from "./constants/routes";
 import HeaderContainer from "./components/containers/header";
 import OptForm from "./components/opt-form/index";
+import Feature from "./components/feature/index";
 
 export default function App() {
   return (
