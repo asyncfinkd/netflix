@@ -36,7 +36,10 @@ export default function App() {
           <FaqsContainer />
           <FooterContainer />
         </Route>
-        <Route exact path={ROUTES.SIGN_IN}></Route>
+        <Route exact path={ROUTES.SIGN_IN}>
+          <HeaderContainer></HeaderContainer>
+          <FooterContainer />
+        </Route>
       </Router>
     </>
   );
