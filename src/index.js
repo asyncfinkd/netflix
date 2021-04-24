@@ -5,13 +5,16 @@ import { GlobalStyles } from "./global-styles";
 import "normalize.css";
 import "./index.css";
 import { firebase } from "./lib/firebase.prod";
+import { FirebaseContext } from "./context/firebase";
 
 render(
   <>
-    <GlobalStyles />
-    <StrictMode>
-      <App />
-    </StrictMode>
+    <FirebaseContext.Provider value={{ firebase }}>
+      <GlobalStyles />
+      <StrictMode>
+        <App />
+      </StrictMode>
+    </FirebaseContext.Provider>
   </>,
   document.getElementById("root")
 );
