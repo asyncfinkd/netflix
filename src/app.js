@@ -8,6 +8,7 @@ import HeaderContainer from "./components/containers/header";
 import OptForm from "./components/opt-form/index";
 import Feature from "./components/feature/index";
 import SignIn from "./components/pages/signin";
+import Signup from "./components/pages/signup";
 
 export default function App() {
   return (
@@ -39,6 +40,9 @@ export default function App() {
         </Route>
         <Route exact path={ROUTES.SIGN_IN}>
           <SignIn />
+        </Route>
+        <Route exact path={ROUTES.SIGN_UP}>
+          <Signup />
         </Route>
       </Router>
     </>
