@@ -22,7 +22,33 @@ export default function Signup() {
 
   return (
     <>
-      <HeaderContainer></HeaderContainer>
+      <HeaderContainer>
+        <Form>
+          <Form.Title>Sign Up</Form.Title>
+          {error && <Form.Error>{error}</Form.Error>}
+
+          <Form.Base onSubmit={handleSignup} method="POST">
+            <Form.Input
+              placeholder="First name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            <Form.Input
+              placeholder="Email address"
+              value={emailAddress}
+              onChange={(e) => setEmailAddress(e.target.value)}
+            />
+            <Form.Input
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Form.Submit disabled={isInvalid} type="submit">
+              Sign Up
+            </Form.Submit>
+          </Form.Base>
+        </Form>
+      </HeaderContainer>
       <FooterContainer />
     </>
   );
