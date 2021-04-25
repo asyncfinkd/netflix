@@ -6,6 +6,7 @@ import Header from "../../components/header/index";
 import * as ROUTES from "../../constants/routes";
 
 export default function BrowseContainer({ slides }) {
+  const [searchTerm, setSearchTerm] = useState("");
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
   const { firebase } = useContext(FirebaseContext);
