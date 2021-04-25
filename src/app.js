@@ -5,9 +5,10 @@ import SignIn from "./components/pages/signin";
 import Signup from "./components/pages/signup";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import Home from "./components/pages/home";
+import useAuthListener from "./hooks/use-auth-listener";
 
 export default function App() {
-  const user = null;
+  const { user } = useAuthListener();
   return (
     <>
       <Router>
