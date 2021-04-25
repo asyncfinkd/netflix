@@ -33,6 +33,10 @@ export default function BrowseContainer({ slides }) {
                 <Header.TextLink>Movies</Header.TextLink>
               </Header.Group>
               <Header.Group>
+                <Header.Search
+                  searchTerm={searchTerm}
+                  setSearchTerm={setSearchTerm}
+                />
                 <Header.Profile>
                   <Header.Picture src={user.photoURL} alt="" />
                   <Header.Dropdown>
