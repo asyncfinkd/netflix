@@ -12,7 +12,9 @@ export default function HeaderContainer({ children }) {
             alt="Netflix"
             src="https://raw.githubusercontent.com/karlhadwen/netflix/master/src/logo.svg"
           />
-          <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
+          <Header.ButtonLink to={ROUTES.SIGN_IN} active>
+            Sign In
+          </Header.ButtonLink>
         </Header.Frame>
         {children}
       </Header>

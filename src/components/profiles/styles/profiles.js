@@ -46,10 +46,6 @@ export const Item = styled.li`
   max-height: 200px;
   max-width: 200px;
   list-style-type: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   margin-right: 30px;
   &:hover > ${Picture} {
