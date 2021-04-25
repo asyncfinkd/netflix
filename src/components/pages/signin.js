@@ -1,22 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { FirebaseContext } from "../../context/firebase";
+import { useHistory } from "react-router-dom";
 import Form from "../form/index";
 import HeaderContainer from "../containers/header";
 import FooterContainer from "../containers/footer";
+import * as ROUTES from "../../constants/routes";
 
 export default function SignIn() {
+  const history = useHistory();
+  const { firebase } = useContext(FirebaseContext);
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const isInvalid = password == "" || emailAddress == "";
+  const handleSignin = (event) => {
+    event.preventDefault();
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(emailAddress, password)
+      .then(() => {
+        history.push(ROUTES.BROWSE);
+      })
+      .catch((error) => {
+        setEmailAddress("");
+        setPassword("");
+        setError(error.message);
+      });
+  };
   return (
     <>
       <HeaderContainer>
         <Form>
           <Form.Title>Sign In</Form.Title>
-          {/* {error && <Form.Error data-testid="error">{error}</Form.Error>} */}
+          {error && <Form.Error data-testid="error">{error}</Form.Error>}
 
-          <Form.Base
-            // onSubmit={handleSignin}
-            method="POST"
-          >
+          <Form.Base onSubmit={handleSignin} method="POST">
             <Form.Input
               placeholder="Email address"
               value={emailAddress}
@@ -30,7 +50,7 @@ export default function SignIn() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Form.Submit
-              // disabled={isInvalid}
+              disabled={isInvalid}
               type="submit"
               data-testid="sign-in"
             >

@@ -35,6 +35,10 @@ export const Error = styled.div`
   margin: 0 0 16px;
   color: white;
   padding: 15px 20px;
+
+  @media (max-width: 360px) {
+    width: 200px;
+  }
 `;
 
 export const Base = styled.form`
@@ -102,7 +106,7 @@ export const Submit = styled.button`
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
-  margin: 24px 0 12px;
+  margin: 4px 0 12px;
   padding: 16px;
   border: 0;
   color: white;
