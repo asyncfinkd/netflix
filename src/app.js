@@ -1,12 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import JumbotronContainer from "./components/containers/jumbotron";
-import FooterContainer from "./components/containers/footer";
-import FaqsContainer from "./components/containers/faqs";
+import { BrowserRouter as Router } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
-import HeaderContainer from "./components/containers/header";
-import OptForm from "./components/opt-form/index";
-import Feature from "./components/feature/index";
 import SignIn from "./components/pages/signin";
 import Signup from "./components/pages/signup";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
