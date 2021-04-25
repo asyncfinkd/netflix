@@ -14,6 +14,10 @@ import {
   Group,
   Profile,
   Dropdown,
+  Search,
+  SearchIcon,
+  SearchInput,
+  PlayButton,
 } from "./styles/header";
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -39,9 +43,7 @@ Header.Search = function HeaderSearch({
 
   return (
     <Search {...restProps}>
-      <SearchIcon
-        onClick={() => setSearchActive((searchActive) => !searchActive)}
-      >
+      <SearchIcon onClick={() => setSearchActive(!searchActive)}>
         <img src="/images/icons/search.png" alt="search" />
       </SearchIcon>
       <SearchInput
@@ -75,6 +77,10 @@ Header.Picture = function HeaderPicture({ src, ...restProps }) {
 
 Header.Feature = function HeaderFeature({ children, ...restProps }) {
   return <Feature {...restProps}>{children}</Feature>;
+};
+
+Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
+  return <PlayButton {...restProps}>{children}</PlayButton>;
 };
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
