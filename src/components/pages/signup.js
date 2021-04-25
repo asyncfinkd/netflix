@@ -16,6 +16,10 @@ export default function Signup() {
 
   const isInvalid = firstName == "" || password == "" || emailAddress == "";
 
+  const handleSignup = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <HeaderContainer></HeaderContainer>
