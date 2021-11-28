@@ -19,7 +19,7 @@ export default function Login() {
           <img
             className="concord-img vlv-creative"
             src="https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/e4e71451-592d-4701-ad43-ac440805001a/GE-en-20211115-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
-            style={{ width: "auto" }}
+            style={{ maxWidth: "none" }}
             alt=""
           />
         </div>
